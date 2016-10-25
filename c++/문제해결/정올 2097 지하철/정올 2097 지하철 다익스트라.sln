@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "정올 2097 지하철 다익스트라", "정올 2097 지하철 다익스트라\정올 2097 지하철 다익스트라.vcxproj", "{3E37CF5B-E2F3-4083-AE47-1B55522A1959}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E37CF5B-E2F3-4083-AE47-1B55522A1959}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3E37CF5B-E2F3-4083-AE47-1B55522A1959}.Debug|Win32.Build.0 = Debug|Win32
+		{3E37CF5B-E2F3-4083-AE47-1B55522A1959}.Release|Win32.ActiveCfg = Release|Win32
+		{3E37CF5B-E2F3-4083-AE47-1B55522A1959}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

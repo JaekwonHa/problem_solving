@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "삼성 경진대회 5번", "삼성 경진대회 5번\삼성 경진대회 5번.vcxproj", "{2901B293-1C8A-4CD0-8B99-1C1959817542}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2901B293-1C8A-4CD0-8B99-1C1959817542}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2901B293-1C8A-4CD0-8B99-1C1959817542}.Debug|Win32.Build.0 = Debug|Win32
+		{2901B293-1C8A-4CD0-8B99-1C1959817542}.Release|Win32.ActiveCfg = Release|Win32
+		{2901B293-1C8A-4CD0-8B99-1C1959817542}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

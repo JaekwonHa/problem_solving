@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "진법 변환. P2745 진법 변환", "진법 변환. P2745 진법 변환\진법 변환. P2745 진법 변환.vcxproj", "{CC528139-AEC3-4669-9FFB-B4D14956C360}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "진법 변환. P11005번 진법 변환 2", "진법 변환. P11005번 진법 변환 2\진법 변환. P11005번 진법 변환 2.vcxproj", "{31593B7B-04AB-44D0-AB55-79BEA664B3A8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "진법 변환. P2085번 진법", "진법 변환. P2085번 진법\진법 변환. P2085번 진법.vcxproj", "{4AE3C765-06DE-49A4-99DE-70D91577407C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "진법 변환. P1112번 진법 변환", "진법 변환. P1112번 진법 변환\진법 변환. P1112번 진법 변환.vcxproj", "{E830658A-9B08-4AF2-A68F-0AFB2994F6C9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "이분 탐색. P2805번 나무 자르기", "이분 탐색. P2805번 나무 자르기\이분 탐색. P2805번 나무 자르기.vcxproj", "{309D45E1-E0F9-46ED-89A2-B0D07B4A17C2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "이분 탐색. P1654번 랜선 자르기", "이분 탐색. P1654번 랜선 자르기\이분 탐색. P1654번 랜선 자르기.vcxproj", "{617AF8BE-8FC1-4291-BE39-60107F2000F1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "이분 탐색. P2110번 공유기 설치", "이분 탐색. P2110번 공유기 설치\이분 탐색. P2110번 공유기 설치.vcxproj", "{30283B3A-6A8F-46E4-9959-3E1024D985B0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "이분탐색. P2342번 기타 레슨", "이분탐색. P2342번 기타 레슨\이분탐색. P2342번 기타 레슨.vcxproj", "{59F6732C-B395-4E96-A7B3-B7E32226182A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CC528139-AEC3-4669-9FFB-B4D14956C360}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CC528139-AEC3-4669-9FFB-B4D14956C360}.Debug|Win32.Build.0 = Debug|Win32
+		{CC528139-AEC3-4669-9FFB-B4D14956C360}.Release|Win32.ActiveCfg = Release|Win32
+		{CC528139-AEC3-4669-9FFB-B4D14956C360}.Release|Win32.Build.0 = Release|Win32
+		{31593B7B-04AB-44D0-AB55-79BEA664B3A8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{31593B7B-04AB-44D0-AB55-79BEA664B3A8}.Debug|Win32.Build.0 = Debug|Win32
+		{31593B7B-04AB-44D0-AB55-79BEA664B3A8}.Release|Win32.ActiveCfg = Release|Win32
+		{31593B7B-04AB-44D0-AB55-79BEA664B3A8}.Release|Win32.Build.0 = Release|Win32
+		{4AE3C765-06DE-49A4-99DE-70D91577407C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4AE3C765-06DE-49A4-99DE-70D91577407C}.Debug|Win32.Build.0 = Debug|Win32
+		{4AE3C765-06DE-49A4-99DE-70D91577407C}.Release|Win32.ActiveCfg = Release|Win32
+		{4AE3C765-06DE-49A4-99DE-70D91577407C}.Release|Win32.Build.0 = Release|Win32
+		{E830658A-9B08-4AF2-A68F-0AFB2994F6C9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E830658A-9B08-4AF2-A68F-0AFB2994F6C9}.Debug|Win32.Build.0 = Debug|Win32
+		{E830658A-9B08-4AF2-A68F-0AFB2994F6C9}.Release|Win32.ActiveCfg = Release|Win32
+		{E830658A-9B08-4AF2-A68F-0AFB2994F6C9}.Release|Win32.Build.0 = Release|Win32
+		{309D45E1-E0F9-46ED-89A2-B0D07B4A17C2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{309D45E1-E0F9-46ED-89A2-B0D07B4A17C2}.Debug|Win32.Build.0 = Debug|Win32
+		{309D45E1-E0F9-46ED-89A2-B0D07B4A17C2}.Release|Win32.ActiveCfg = Release|Win32
+		{309D45E1-E0F9-46ED-89A2-B0D07B4A17C2}.Release|Win32.Build.0 = Release|Win32
+		{617AF8BE-8FC1-4291-BE39-60107F2000F1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{617AF8BE-8FC1-4291-BE39-60107F2000F1}.Debug|Win32.Build.0 = Debug|Win32
+		{617AF8BE-8FC1-4291-BE39-60107F2000F1}.Release|Win32.ActiveCfg = Release|Win32
+		{617AF8BE-8FC1-4291-BE39-60107F2000F1}.Release|Win32.Build.0 = Release|Win32
+		{30283B3A-6A8F-46E4-9959-3E1024D985B0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{30283B3A-6A8F-46E4-9959-3E1024D985B0}.Debug|Win32.Build.0 = Debug|Win32
+		{30283B3A-6A8F-46E4-9959-3E1024D985B0}.Release|Win32.ActiveCfg = Release|Win32
+		{30283B3A-6A8F-46E4-9959-3E1024D985B0}.Release|Win32.Build.0 = Release|Win32
+		{59F6732C-B395-4E96-A7B3-B7E32226182A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{59F6732C-B395-4E96-A7B3-B7E32226182A}.Debug|Win32.Build.0 = Debug|Win32
+		{59F6732C-B395-4E96-A7B3-B7E32226182A}.Release|Win32.ActiveCfg = Release|Win32
+		{59F6732C-B395-4E96-A7B3-B7E32226182A}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

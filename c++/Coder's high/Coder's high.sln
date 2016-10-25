@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "예비소집 B번 - Meats On The Grill", "예비소집 B번 - Meats On The Grill\예비소집 B번 - Meats On The Grill.vcxproj", "{44DC4A43-91E1-4438-B506-41D56613B00B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "예비소집 C번 - 판게아 2", "예비소집 C번 - 판게아 2\예비소집 C번 - 판게아 2.vcxproj", "{7A09717F-E410-426E-8D04-CD69CDB48398}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "C번 주작 주 주작", "C번 주작 주 주작\C번 주작 주 주작.vcxproj", "{17C8761C-A7E2-452B-88B7-455F5DF00FBE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "D번 블록 게임", "D번 블록 게임\D번 블록 게임.vcxproj", "{0D3FEA48-D5AD-49ED-B6B4-35BD2B2AAFDF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{44DC4A43-91E1-4438-B506-41D56613B00B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{44DC4A43-91E1-4438-B506-41D56613B00B}.Debug|Win32.Build.0 = Debug|Win32
+		{44DC4A43-91E1-4438-B506-41D56613B00B}.Release|Win32.ActiveCfg = Release|Win32
+		{44DC4A43-91E1-4438-B506-41D56613B00B}.Release|Win32.Build.0 = Release|Win32
+		{7A09717F-E410-426E-8D04-CD69CDB48398}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7A09717F-E410-426E-8D04-CD69CDB48398}.Debug|Win32.Build.0 = Debug|Win32
+		{7A09717F-E410-426E-8D04-CD69CDB48398}.Release|Win32.ActiveCfg = Release|Win32
+		{7A09717F-E410-426E-8D04-CD69CDB48398}.Release|Win32.Build.0 = Release|Win32
+		{17C8761C-A7E2-452B-88B7-455F5DF00FBE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{17C8761C-A7E2-452B-88B7-455F5DF00FBE}.Debug|Win32.Build.0 = Debug|Win32
+		{17C8761C-A7E2-452B-88B7-455F5DF00FBE}.Release|Win32.ActiveCfg = Release|Win32
+		{17C8761C-A7E2-452B-88B7-455F5DF00FBE}.Release|Win32.Build.0 = Release|Win32
+		{0D3FEA48-D5AD-49ED-B6B4-35BD2B2AAFDF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0D3FEA48-D5AD-49ED-B6B4-35BD2B2AAFDF}.Debug|Win32.Build.0 = Debug|Win32
+		{0D3FEA48-D5AD-49ED-B6B4-35BD2B2AAFDF}.Release|Win32.ActiveCfg = Release|Win32
+		{0D3FEA48-D5AD-49ED-B6B4-35BD2B2AAFDF}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

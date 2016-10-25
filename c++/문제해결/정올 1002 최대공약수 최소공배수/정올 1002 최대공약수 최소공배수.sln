@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "정올 1002 최대공약수 최소공배수", "정올 1002 최대공약수 최소공배수\정올 1002 최대공약수 최소공배수.vcxproj", "{E4064EE2-B9DD-4F9D-878F-4989276F991E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E4064EE2-B9DD-4F9D-878F-4989276F991E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E4064EE2-B9DD-4F9D-878F-4989276F991E}.Debug|Win32.Build.0 = Debug|Win32
+		{E4064EE2-B9DD-4F9D-878F-4989276F991E}.Release|Win32.ActiveCfg = Release|Win32
+		{E4064EE2-B9DD-4F9D-878F-4989276F991E}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
