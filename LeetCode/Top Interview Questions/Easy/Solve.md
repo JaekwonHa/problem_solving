@@ -1,4 +1,6 @@
-# Top Interview Questions > Easy > Array
+# Top Interview Questions > Easy
+
+# Array
 
 ## 1_Two_Sum
 첫번째로 주어진 int 형 배열 속에서 서로 다른 두 수를 더해 두번째로 주어진 수가 되는 쌍의 index를 반환한다.
@@ -60,3 +62,56 @@ lambda식을 사용하면 쉽게 자를 수 있다
 단순히 중복을 찾는 문제와 다른 점은 개수도 답에 영향을 미친다는 것
 hash 테이블을 만들어서 해결하는 방법도 있고, 정렬된 상태에서 이진 탐색으로 조회할 수도 있다
 이진 탐색이 best 인거 같음
+
+# Strings
+
+## 344_Reverse_String
+
+x, y 위치의 문자열을 XOR 연산 3번을 반복하면 추가 메모리 공간없이 치환할 수 있다
+
+## 7_Reverse_Integer
+
+숫자 -> 문자 변환 후 reverse 하고 다시 숫자로 변환
+reverse 할때는 s[::-1] 로 간단하게 할 수 있음
+python 에서 interger.MAX_VALUE 확인은 x > (1 << 31) - 1 로 확인 가능
+
+pop, push 하는 방식으로도 풀 수 있는데
+pop y/10
+push y*10 + x
+
+## 387_First_Unique_Character_in_a_String
+
+hash 맵 만들어서 풀이 가능
+
+## 242_Valid_Anagram
+
+sort 하는 것으로 쉽게 풀이 가능
+
+## 126_Valid_Palindrome
+
+펠린드롬이란 앞 뒤로 읽어도 똑같은 문자열
+정규표현식으로 문자 제거 후에 reverse 비교로 풀이
+정규표현식은 \w \W 가 반대의 의미이고 \w에는 _ 문자가 포함된다는 것에 주의
+
+## 8_String_to_Integer_(atoi)
+
+알고리즘 문제라기 보다는 함수 하나를 작성하는 문제
+python 코드 상에서 overflow에 대한 처리가 좀 까다로웠다
+
+## 28_Implement_strStr()
+
+쉽게 풀면 이중 for loop 로 풀 수 있고..
+제대로 풀려면 KMP, rabin karp 알고리즘으로 풀어야 한다
+
+## 38_Count_and_Say
+
+이전 term을 발음을 통해 현재의 term을 만드는 방식이다
+재귀로 풀거나, 미리 배열을 만들어두면 더 효율적으로 해결할 수 있다
+
+## 14_Longest_Common_Prefix
+
+LCP 문제인데, 푸는 방법이 굉장히 다양하다
+LeetCode solution 에서 소개하는 방법은 수평 스캔, 수직 스캔, 분할정복, 이진탐색, 트라이
+다양한 방법으로 코딩하는 방법을 알아두면 도움이 많이 될 것 같다
+
+
