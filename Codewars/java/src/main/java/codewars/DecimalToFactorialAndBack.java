@@ -1,14 +1,8 @@
+package codewars;
 
-public class Decimal_to_Factorial_and_Back {
+public class DecimalToFactorialAndBack {
 
     private static final String mapping = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
-    public static void main(String[] args) {
-        System.out.println(dec2FactString(371993326789901217467999448150835199999999L));
-        System.out.println(dec2FactString(2982));
-        System.out.println(factString2Dec("341010"));
-        System.out.println(factString2Dec("4042100"));
-    }
 
     public static String dec2FactString(long nb) {
         StringBuilder answer = new StringBuilder("0");
