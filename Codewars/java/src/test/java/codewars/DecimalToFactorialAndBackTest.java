@@ -22,7 +22,6 @@ class DecimalToFactorialAndBackTest {
         assertEquals(DecimalToFactorialAndBack.factString2Dec(nb), answer);
     }
 
-
     static Stream<Arguments> source_dec2FactString() {
         return Stream.of(
                 Arguments.of(463L, "341010"),
