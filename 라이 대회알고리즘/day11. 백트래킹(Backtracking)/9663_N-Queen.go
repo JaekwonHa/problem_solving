@@ -1,4 +1,4 @@
-package day17.` 유니온 파인드(Union-Find)`.main
+package main
 
 import (
 	"bufio"
@@ -32,7 +32,7 @@ func step1(N int, queensX []int, queensY []int, row int) (result int) {
 	return result
 }
 
-func day17.` 유니온 파인드(Union-Find)`.main() {
+func main() {
 
 	reader := bufio.NewReader(os.Stdin)
 	writer := bufio.NewWriter(os.Stdout)

@@ -1,4 +1,4 @@
-package day17.` 유니온 파인드(Union-Find)`.main
+package main
 
 import (
 	"bufio"
@@ -18,9 +18,9 @@ var (
 	MAX = 100001
 )
 
-func max(day17.` 유니온 파인드(Union-Find)`.numbers ...int) (result int) {
+func max(numbers ...int) (result int) {
 	result = MinInt
-	for _, number := range day17.` 유니온 파인드(Union-Find)`.numbers {
+	for _, number := range numbers {
 		if result < number {
 			result = number
 		}
@@ -28,7 +28,7 @@ func max(day17.` 유니온 파인드(Union-Find)`.numbers ...int) (result int) {
 	return result
 }
 
-func day17.` 유니온 파인드(Union-Find)`.main() {
+func main() {
 
 	reader := bufio.NewReader(os.Stdin)
 	writer := bufio.NewWriter(os.Stdout)
@@ -45,10 +45,10 @@ func day17.` 유니온 파인드(Union-Find)`.main() {
 	for i := 0; i < T; i++ {
 		fmt.Fscanln(reader, &N)
 		for j := 1; j <= N; j++ {
-			fmt.Fscanf(reader, "%day17.` 유니온 파인드(Union-Find)`.d ", &A[j][0])
+			fmt.Fscanf(reader, "%d ", &A[j][0])
 		}
 		for j := 1; j <= N; j++ {
-			fmt.Fscanf(reader, "%day17.` 유니온 파인드(Union-Find)`.d ", &A[j][1])
+			fmt.Fscanf(reader, "%d ", &A[j][1])
 		}
 
 		if N == 1 {

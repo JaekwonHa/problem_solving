@@ -47,7 +47,7 @@ private fun isWhiteSpace(c: Char) = c in " \r\n\t"
 
 // JVM-only targeting code follows next
 
-// day17.` 유니온 파인드(Union-Find)`.readString() via sequence is still slightly faster than Scanner
+// readString() via sequence is still slightly faster than Scanner
 private fun readString() = generateSequence { System.`in`.read().toChar() }
     .dropWhile { isWhiteSpace(it) }.takeWhile { !isWhiteSpace(it) }.joinToString("")
 

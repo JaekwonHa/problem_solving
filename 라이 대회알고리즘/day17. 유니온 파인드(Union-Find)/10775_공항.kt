@@ -68,21 +68,21 @@ fun main() = with(BufferedReader(InputStreamReader(System.`in`))) {
             }
             answer += 1
             union(find(lastGate), find(lastGate) -1)
-//            if (day17.` 유니온 파인드(Union-Find)`.capacity[day17.` 유니온 파인드(Union-Find)`.find(lastGate)] > 0) {
-//                day17.` 유니온 파인드(Union-Find)`.capacity[day17.` 유니온 파인드(Union-Find)`.find(lastGate)] -= 1
+//            if (capacity[find(lastGate)] > 0) {
+//                capacity[find(lastGate)] -= 1
 //                answer += 1
 //                check = true
 //                if (lastGate != 1) {
-//                    day17.` 유니온 파인드(Union-Find)`.union(lastGate, lastGate-1)
+//                    union(lastGate, lastGate-1)
 //                }
 //            } else {
-//                for (i in day17.` 유니온 파인드(Union-Find)`.find(lastGate)-1 downTo 1) {
-//                    if (day17.` 유니온 파인드(Union-Find)`.capacity[day17.` 유니온 파인드(Union-Find)`.find(i)] > 0) {
-//                        day17.` 유니온 파인드(Union-Find)`.capacity[day17.` 유니온 파인드(Union-Find)`.find(i)] -= 1
+//                for (i in find(lastGate)-1 downTo 1) {
+//                    if (capacity[find(i)] > 0) {
+//                        capacity[find(i)] -= 1
 //                        answer += 1
 //                        check = true
 //                        if (i != 1) {
-//                            day17.` 유니온 파인드(Union-Find)`.union(i, i - 1)
+//                            union(i, i - 1)
 //                        }
 //                        break
 //                    }
