@@ -6,3 +6,11 @@
 build
 
 venv
+
+*.jar
+kotlin
+out
+
+.vscode
+
+기업문제
