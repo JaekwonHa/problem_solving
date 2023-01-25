@@ -15,7 +15,7 @@ class Solution:
         while q.empty() is False:
             node = q.get()
             if node.left is not None:
-                if node.left.val < node.val:
+                if node.left.val < node.val :
                     q.put(node.left)
                 else:
                     return False

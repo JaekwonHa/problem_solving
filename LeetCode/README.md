@@ -77,7 +77,7 @@ python 에서 interger.MAX_VALUE 확인은 x > (1 << 31) - 1 로 확인 가능
 
 pop, push 하는 방식으로도 풀 수 있는데
 pop y/10
-push y*10 + x
+push y * 10 + x
 
 ## 387_First_Unique_Character_in_a_String
 
@@ -166,3 +166,59 @@ slow, fast 2개 포인터를 두고, fast 포인터만 2칸씩 이동시키면 f
 
 링크드리스트 문제에서 핵심은 추가적인 포인터를 사용할 줄 알아야하고 (prev, curr), 두가지 포인터를 각각 다른 step으로 전진시키면서도 생각해봐야하고, reverse해서 비교하는 것도 생각해봐야한다.
 
+
+## 424_Longest_Repeating_Character_Replacement
+
+sliding window 문제인데, tail, head를 써야할 뿐만 아니라 tail ~ head 사이에 가장 많이 등장하는 알파벳의 개수도 저장해두어야 한다.
+컨셉은 "전체 길이에서 가장 개수가 많은 알파벳의 개수만큼은 생각하지 않아도 된다. 그 만큼은 k 로 바꾸지 않아도 된다."
+
+## 844_Backspace_String_Compare
+
+stack_s == stack_k 처럼 리스트가 동일한 item을 가졌는지 비교하는 것 보다,
+''.join(stack_s) == ''.join(stack_t) 처럼 string 형태로 만들어서 비교하는게 훨씬 빠르다.
+
+
+# 알고리즘 지식
+
+## 다양한 컨셉
+
+* set 으로 중복을 제거하는게 유리한가?
+* pointer 를 두개 두는게 유리한가?
+	- head, tail ?
+	- slow, fast ?
+* 처리하지 않아도 되는 (min, maximum 조건) 조건에서는 바로 return 해버리는게 성능이 많이 도움이 된다.
+* 뒤에서부터 처리 가능한가?
+
+## 플로이드의 순환 탐색 알고리즘(Floyd's cycle detection algorithm)
+
+* 142. Linked List Cycle II
+
+fast와 slow 포인터가 점 p에서 만날 때 그들이 달린 길이는 'a+2b+c'와 'a+b'이고 fast가 2배 빠르게 이동하기 때문에 a+2b+c == 2(a+b)가 됩니다. 최종적으로 우리는 'a==c'를 얻을 수 있습니다.
+
+## 트리 순회 방법(tree traversal)
+
+* 98. Validate Binary Search Tree
+	- Inorder 예시
+
+Inorder, Preorder, Postorder
+중위순회, 전위순회, 후위순회
+왼쪽>루트>오른쪽 / 루트>왼쪽>오른쪽 / 왼쪽>오른쪽>루트
+
+stack이나 recursive로 구현한다.
+stack은 DFS
+
+Levelorder traversal
+root 부터 한 레벨씩 아래로 내려간다.
+level order는 Queue로 구현한다.
+queue는 BFS
+
+
+
+
+
+## Anagram
+
+sort 해보면 두 문장이 anagrame인지 알 수 있다. sort 하는데 O(nlogn)
+각 알파벳의 출현빈도를 카운팅. O(n), O(256) or (1) 상수 공간복잡도
+unique 문자로만 구성이 되어 있다면 set을 사용할 수 있다. 아니라면 hashmap 으로 카운팅
+출현빈도 카운팅을 bitwise 하게 한다면 공간복잡도 O(1)

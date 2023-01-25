@@ -10,6 +10,3 @@ class Solution:
         return [0, 1]
 
 
-arr = [0, 4, 3, 0]
-solution = Solution();
-print(solution.twoSum(arr, 0))
