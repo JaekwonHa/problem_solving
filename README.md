@@ -22,10 +22,21 @@
   - 면접관에게 설명하는 것처럼 complexity와 풀이 방향을 주석으로 적은 다음에 구현 시작하기, 
   - 다 푼 다음에 discussion에서 최적해와 비교해보기, 
   - 45분이 지나면 깔끔하게 손 떼기. 
+* 인터뷰 준비
+  - https://www.youtube.com/watch?v=IWvbPIYQPFM
+  - https://www.youtube.com/channel/UCaO6VoaYJv4kS-TQO_M-N_g/featured
+* 리트코드에서 mock interview
+  - https://leetcode.com/assessment/
 
 * InterviewBit (https://www.interviewbit.com/) : 각 회사별 기출문제가 있고, 각문제별로 평균 solving시간이 나와서, 자신이 얼마나 문제를 빨리 푸는 지 늦게 푸는 지 확인할 수 있음
 저는 주로 LeetCode로 연습하고, interviewBit에서 막바지에 점검하는 형식으로 준비했습니다. 문제가 여러개일 때는 한문제에 집착하지 말고, 어려운 문제는 스킵하고 쉬운문제부터 풀 것은 권고드립니다. 모든 문제를 완벽하게 다 풀지 못했더라도, Pass되는 경우가 꽤 있습니다. 
 
+하드 문제를 최적해 유일해로 푸는것 보다
+미듐 문제에 대해 여러 솔루션을 제시하고 어떤게 더 좋은지, 해결 과정중에 무슨 문제가 있고 어떤 방법이 더 나은지 인터뷰어랑 토론 하는게 훨씬 높은 점수를 받는듯요
+
+  * 면접관에게 설명하는 것처럼 complexity와 풀이 방향을 주석으로 적은 다음에 구현 시작하기, 
+    - 아이패드, 화이트보드에 그려보기
+  * 다 푼 다음에 discussion에서 최적해와 비교해보기, 
 
 -----------------------
 
@@ -66,6 +77,33 @@ faang도 회사마다 스타일이 다르긴 한데 대충 아래 3가지 할 �
 
 --------------------------
 
+
+[14 Patterns to Ace Any Coding Interview Question](https://hackernoon.com/14-patterns-to-ace-any-coding-interview-question-c5bb3357f6ed)
+
+--------------------------
+
+[A $300,000 Googler Explains: How To Protect Yourself From Tech Layoffs](https://levelup.gitconnected.com/a-300-000-google-explains-how-to-protect-yourself-from-tech-layoffs-df172f049ae9)
+* bytebytego 8만원이면 연간이용 가능.
+* 커뮤니티에서 mock interview나 이런거의 정보를 얻을 수 있을듯 
+
+--------------------------
+
+[실리콘밸리 top5 회사 합격 후기](https://medium.com/@jubileekim/%EC%8B%A4%EB%A6%AC%EC%BD%98%EB%B0%B8%EB%A6%AC-top5-%ED%9A%8C%EC%82%AC-%ED%95%A9%EA%B2%A9-%ED%9B%84%EA%B8%B0-c50640b26eab)
+
+--------------------------
+
+[twowaits/SDE-Interview-Questions](https://github.com/twowaits/SDE-Interview-Questions)
+
+--------------------------
+
+
+[안녕하세요. 최근에 15개 정도의 회사와 인터뷰를 보았습니다. ](https://www.facebook.com/groups/helpdev/permalink/4088725231186787/)
+
+---------------------------
+
+[Top 5 Hardest Coding Questions From Recent FAANG Interviews](https://betterprogramming.pub/top-5-hardest-coding-questions-from-recent-faang-interviews-d46bcb4dd8dc)
+
+-------------------------
 
 * https://blog.myungwoo.kr/142
 * https://codeforces.com/blog/entry/46459

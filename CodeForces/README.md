@@ -1,11 +1,12 @@
-# codeforce
+# Codeforces
 
 
 
 
 ## (20221227) Codeforces Round #841 (Div. 2) and Divide by Zero 2022
+> https://codeforces.com/contest/1731
 
-### A
+### A. Joey Takes Money
 
 두수를 더한 수보다 두수를 곱한수가 무조건 더 크다
 
@@ -13,7 +14,7 @@
 
 그렇다면 모든 수를 곱한 뒤에 다른 1들의 수를 계산하면 된다
 
-### B
+### B. Kill Demodogs
 
 가야하는 경로는 확실하다.
 오른,아래,오른,아래...로 가는 것이 최선
@@ -39,7 +40,7 @@
 ![image](assets/841_1.png){width="300" height="550"}
 
 
-### C
+### C. Even Subarrays
 
 해결해야하는 과정들이 많다
 
@@ -380,7 +381,13 @@ D는 swap 정렬과 유사하다는 것은 알았는데, 이걸 cycle 처럼 생
 ## (20230109) Codeforces Round #840 (Div. 2) and Enigma 2022 - Cybros LNMIIT
 
 
-### C.
+### A. Absolute Maximization (11min)
+
+
+### B. Incinerate (24min)
+
+
+### C. Another Array Problem (85min. x)
 
 N = 1 
 N = 2
@@ -431,7 +438,7 @@ https://codeforces.com/blog/entry/110278
 
 ## (20230125) Educational Codeforces Round 141 (Rated for Div. 2)
 
-### A. Make it Beautiful
+### A. Make it Beautiful (21min)
 
 가장 큰 수를 앞에 배치하면 이후 수열은 모두 beatiful하다.
 하지만 가장 큰 수를 앞에 배치했을때 그 다음에 오는 수와 동일할 경우 beatiful 하지않다.
@@ -439,12 +446,12 @@ https://codeforces.com/blog/entry/110278
 나는 sort해서 가장 큰 수부터 배치하고
 첫번째 두번째 숫자가 동일하지 않도록 조정해서 해결했다
 
-## B. Matrix of Differences
+### B. Matrix of Differences (26min)
 
 가장 작은수, 가장 큰수, 그다음 가장 작은수, 그다음 가장 큰수 순으로 배치하고
 짝수행마다 열을 reverse 해서 배치했다
 
-### C. Yet Another Tournament
+### C. Yet Another Tournament (73min. x)
 
 최대 승수는 쉬운 상대부터 상대하면 된다
 나는 이때 할 수 있는 마지막 승부에서 지금 상대보다 다음 상대를 이기는게 더 좋다면 그렇게 하도록 코딩했다
@@ -463,25 +470,122 @@ https://codeforces.com/blog/entry/110278
 
 
 
+## (20230126) Educational Codeforces Round 142 (Rated for Div. 2)
+
+
+### A. GamingForces (8min)
+
+greedy
+몬스터를 1번에 1마리를 완벽히 죽이느냐, 1번에 체력이 적은 2마리를 동시에 죽이느냐를 선택해야 한다.
+체력이 1이라면 각각 죽이는 것보다 한번에 죽이는게 이득이다.
+하지만 체력이 2만 되어도 한번에 죽이냐, 각각 죽이냐 횟수가 동일하다
+
+따라서 체력이 1인 것들은 짝수개씩 묶어서 죽이면 되고, 나머지는 모두 각각 죽여야 한다
+
+### B. Stand-up Comedian (85min)
+
+type1을 무조건 먼저 하는게 이득이다.
+type2,3은 할 수 있는 번갈아가면서 하고, 마지막에 type4를 하는게 가장 이득이다.
+
+생각을 잘못한게 
+type2,3을 할 수 있는 만큼 쭉 한다음에 switch해서 쭉 하고를 반복해야 한다고 생각했다.
+그게 아니라 그냥 type2,3은 한번씩만 번갈아가면서 해도 된다
+즉, min(type2, type3)의 횟수만큼은 무조건 할 수 있다는 말이다 (type1이 1 이상이라면)
+따라서
+
+if a > 0
+a + min(b,c) 만큼은 무조건 할 수 있다
+
+그 후에는 min(a+1, max(b,c) - min(b,c)) 만큼을 더 추가적으로 할 수 있다
+(남은 것은 몰빵으로 하는 것인데, 이 횟수는 a만큼 할 수 있고 그러고도 b,c가 남았다면 마지막 한번더 할 수 있다. 이때 음수가 되서 종료됨)
+
+이때 b,c보다 a가 커서 d까지 할 수 있다면 d도 수행해줘야 해서
+
+min(a+1, max(b,c) - min(b,c) + d)
+
+이 답이 된다
+
+### C. Min Max Sort (27min. x)
+
+permutation에서, permutation [k, N-k+1] 정렬된 상태인지 확인하는 여러 테크닉이 있지만...
+
+head, tail pointer로 정렬을 확인하는 방법이 있다
+
+head = k
+tail = N-k+1
+으로 앞뒤에서 하나씩 줄여가며 숫자가 일치하는지를 확인하는 방법이다
+
+여기서 중요한 점은 [k, n-k+1] 구간이 정렬되어 있는 k 값이 있다면, 더 큰 k 값에 대해서도 정렬된 상태이다.
+따라서 가장 큰 k 값부터 탐색을 시작할 수 있다.
+여기서 가장 큰 k 값이란 중간값이다. k = (n+1)/2
+
+따라서
+pos_k < pos_k+1 && pos_n-(k+1)-1 < pos_n-k+1 의 순서를 유지하는지를 k 값을 감소시켜가면서 탐색해보면 된다
+
+중간값에서부터 정렬된 길이 만큼은 정렬하지 않아도 된다.
+나머지 부분들은 모두 정렬되어야 한다
+
+최대 횟수는 몇번일까? 역순일때를 생각해보자
+짝수라면. 모든 값을 정렬해야한다. N/2번 연산을 수행
+홀수라면. 중간값 빼고. N-1개를 정렬해야한다 (N-1)/2 연산을 수행
+
+이떄 범위가 closed 냐 아니냐를 주의해야 한다
+정렬이 필요할때 while 문을 빠져나오기 때문에
+l, r 위치의 숫자도 정렬이 필요하다
+
+right 부분의 정렬이 필요한 숫자는 n-r+1 개 (r을 포함하기 때문에 +1)
+left 부분의 정렬이 필요한 숫자는 l 개
+
+```c++
+    int l = (n + 1) / 2, r = (n + 2) / 2;
+    while (l > 0 && (l == r || (pos[l] < pos[l + 1] && pos[r - 1] < pos[r]))) {
+      --l;
+      ++r;
+    }
+    cout << (n - r + l + 1) / 2 << '\n';
+```
+
+### D. Fixed Prefix Permutations
+
+10:25~
 
 
 
 
+### 정리
+
+permutation에 특정한 연산을 최소 횟수로 적용해서 정렬하는 문제가 자주 나오는 것 같다.
+특정한 연산이라는게 greedy 하기도 하고, 부분합, 세그먼트 트리, 우선순위큐 등 다양한 방법들이 쓰이는 것 같다.
+
+A,B는 10~15 line 내외로 작성이 된다. 하지만 구현에 따라서 좀 더 길어질 수도 있긴 하다
+
+A,B,C 는 math, greedy, sort 같은 문제이다
+
+만약에 정렬을 해야 한다면....
+이미 정렬되어있다면?
+가장 정렬되어있지 않은 상황이라면?
+을 가정하고 접근해보자
+
+그리고 operation을 적용할때..
+마지막 operation을 perform and check
+마지막-1 operation을 perform and check
+...
+1번째 operation을 perform and check
+서로 연관성이 있는지를 생각해본다
+중간에 답이 나오게 된다면, 그 상화에서 무엇을 출력하게 될지도....
 
 
+## (20230126) Educational Codeforces Round 140 (Rated for Div. 2)
 
+### A. Cut the Triangle
 
+세점중 두점이 같은 x좌표, y좌표를 가지면 안된다
+x좌표 체크, y좌표 체크. 두개 모두 체크되면 NO
 
+### B. Block Towers
 
-
-
-
-
-
-
-
-
-
+큰것을 마지막에. 작은것부터 블럭을 옮기는게 유리하다
+두 타워의 합/2 만큼의 높이를 최대로 가질 수 있다. 이때 높이가 작아질 수도 있어서 이런 케이스는 skip 해야함
 
 
 
