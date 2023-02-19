@@ -9,8 +9,13 @@ venv
 
 *.jar
 kotlin
-out
+kotlin-out
 
 .vscode
 
+.tmp.driveupload
+.tmp.drivedownload
+
 기업문제
+study-plan.md
+*.pdf
