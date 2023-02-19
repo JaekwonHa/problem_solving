@@ -25,6 +25,40 @@
 ex. 길이=길이, 예산=예산
 
 
+
+
+# 이분탐색 다시 복습
+> [이분 탐색(Binary Search) 헷갈리지 않게 구현하기](https://www.acmicpc.net/blog/view/109)
+
+세 줄 요약
+1. [lo, hi]가 Check(lo) != Check(hi)가 되도록 구간을 설정
+2. while (lo + 1 < hi)동안 mid = (lo + hi) / 2에서 Check(mid) = Check(lo)라면 lo = mid, 아니라면 hi = mid
+3. 구한 경계에서 답이 lo인지 hi인지 생각해보고 출력
+
+왜 구한경계에서 lo, hi 중 무엇이 답인지 봐야할까?
+lower bound, upper bound 의 차이는 수식으로 보면 등호가 어디있냐의 차이다
+
+
+1. lower_bound는 v[i - 1] < k <= v[i]인 i를 찾아주는 함수로, k <= v[i]인 i의 최솟값을 반환합니다.
+만약 v의 모든 원소가 k보다 작다면 v의 마지막 다음 칸의 위치를 반환합니다.
+
+2. upper_bound는 v[i - 1] <= k < v[i]인 i를 찾아주는 함수로 k < v[i]인 i의 최솟값을 반환합니다.
+이 경우에도 v의 모든 원소가 k보다 작거나 같다면 v의 마지막 다음 칸의 위치를 반환합니다.
+
+예를 들어 n = 5, v = [1, 2, 3, 3, 4]일 때
+lower_bound(v, v + n, 3)은 v[2] >= 3이기 때문에 2
+upper_bound(v, v + n, 3)은 v[4] > 3이기 때문에 4
+
+
+> 내가 기존에 외우고 있던 '등호'가 있는 쪽의 left or right를 출력한다는 것은 lower bound를 찾는 경우가 많았기 때문으로 보인다
+> 내가 지금 찾고 있는게 lower bound인지, upper bound인지 알고있어야한다
+
+![image](../assets/day5_image1.png){width="600" height="300"}
+
+![image](../assets/day5_image2.png){width="800" height="500"}
+
+
+
 ## 2805번: 나무 자르기
 
 M이 만족되었다고 바로 반환하면 안되고, 그 중에서도 높이가 가장 높은것, right bound를 출력해야한다
