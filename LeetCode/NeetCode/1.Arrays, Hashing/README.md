@@ -1,7 +1,7 @@
 # NeetCode
 > https://neetcode.io/practice
 
-## Arrays, Hashing
+## 1.Arrays, Hashing
 
 ### 217. Contains Duplicate 👍
 
